@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/../app/config/Config.php';
+
     //SISTEMA DE ROTAS V0.1
    $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 

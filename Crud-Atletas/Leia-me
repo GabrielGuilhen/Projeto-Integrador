@@ -23,11 +23,6 @@ Este é um sistema de CRUD (Create, Read, Update, Delete) desenvolvido para a ge
 - **Frontend:** Bootstrap 5 & Bootstrap Icons
 - **Padrões de Projeto:** Repository Pattern e Service Layer
 
-## 📦 Download e Uso Rápido
-
-Você pode baixar a versão completa do projeto pronta para rodar:
-- **[Clique aqui para baixar o projeto (.zip)](LINK_AQUI)**
-
 ### Como rodar o projeto:
 1. Extraia o conteúdo do ZIP na pasta `htdocs` (XAMPP) ou `www` (WAMP).
 2. Importe o arquivo `database.sql` (incluso no ZIP) no seu MySQL.
@@ -44,4 +39,4 @@ Você pode baixar a versão completa do projeto pronta para rodar:
 * `/public/uploads`: Local onde as fotos dos atletas são armazenadas.
 
 ---
-Este projeto foi desenvolvido como parte dos requisitos do Projeto Integrador.
+Este projeto foi desenvolvido como estudo para realizar o Projeto Integrador.

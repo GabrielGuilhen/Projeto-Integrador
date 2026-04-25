@@ -1,0 +1,47 @@
+# 🏆 Sistema de Gerenciamento de Atletas - Projeto Integrador
+
+Este é um sistema de CRUD (Create, Read, Update, Delete) desenvolvido para a gestão de atletas. O projeto permite cadastrar informações detalhadas, visualizar perfis, editar dados existentes e realizar a exclusão segura de registros, contando com níveis de acesso e regras de negócio específicas.
+
+## 🚀 Funcionalidades
+
+- **Autenticação:** Sistema de login com diferenciação entre usuários comuns e administradores.
+- **Gestão de Atletas:** - Cadastro com upload de foto.
+    - Listagem dinâmica com busca.
+    - Edição de dados com persistência.
+    - Exclusão com tela de confirmação e proteção para administradores.
+- **Regras de Negócio e Validações:**
+    - **Campos Obrigatórios:** Validação no servidor para garantir que Nome, Clube e Peso sejam preenchidos.
+    - **Impedimento de Duplicidade:** O sistema verifica se um atleta com o mesmo nome já existe no banco de dados antes de salvar.
+    - **Segurança de Deleção:** Apenas usuários com perfil 'admin' podem excluir registros.
+    - **Gestão de Arquivos:** Remoção automática da foto do servidor quando um atleta é excluído.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Linguagem:** PHP 8.x
+- **Arquitetura:** MVC (Model-View-Controller)
+- **Banco de Dados:** MySQL (via PDO para maior segurança)
+- **Frontend:** Bootstrap 5 & Bootstrap Icons
+- **Padrões de Projeto:** Repository Pattern e Service Layer
+
+## 📦 Download e Uso Rápido
+
+Você pode baixar a versão completa do projeto pronta para rodar:
+- **[Clique aqui para baixar o projeto (.zip)](LINK_AQUI)**
+
+### Como rodar o projeto:
+1. Extraia o conteúdo do ZIP na pasta `htdocs` (XAMPP) ou `www` (WAMP).
+2. Importe o arquivo `database.sql` (incluso no ZIP) no seu MySQL.
+3. Configure as credenciais do banco em `app/config/Config.php`.
+4. Certifique-se de que a `URL_BASE` no arquivo de configuração aponta para a pasta correta.
+
+## 🏗️ Estrutura de Pastas
+
+* `/app/controllers`: Lógica de controle e gerenciamento das rotas.
+* `/app/models`: Classes de entidade e objetos de domínio (Atleta, Usuario).
+* `/app/services`: Camada de serviço onde residem as **regras de negócio** e validações.
+* `/app/repositories`: Camada de persistência (comunicação direta com o banco de dados).
+* `/app/views`: Arquivos de interface do usuário (HTML/PHP).
+* `/public/uploads`: Local onde as fotos dos atletas são armazenadas.
+
+---
+Este projeto foi desenvolvido como parte dos requisitos do Projeto Integrador.
